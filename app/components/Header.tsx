@@ -108,7 +108,7 @@ export default function Header() {
 
                         {/* Clerk Auth */}
                         {isSignedIn ? (
-                            <UserButton afterSignOutUrl="/" />
+                            <UserButton />
                         ) : (
                             <>
                                 <SignInButton mode="modal">
@@ -160,7 +160,7 @@ export default function Header() {
                         </ul>
                         <div className="flex flex-col gap-2 pt-3 border-t border-green-900/30">
                             {isSignedIn ? (
-                                <UserButton afterSignOutUrl="/" />
+                                <UserButton />
                             ) : (
                                 <>
                                     <SignInButton mode="modal">
