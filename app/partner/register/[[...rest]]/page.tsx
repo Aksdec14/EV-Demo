@@ -122,6 +122,7 @@ export default function PartnerAuth() {
 
                         {mode === "signUp" ? (
                             <SignUp
+                                routing="hash"
                                 forceRedirectUrl="/partner/dashboard"
                                 appearance={{
                                     elements: {
@@ -137,6 +138,7 @@ export default function PartnerAuth() {
                             />
                         ) : (
                             <SignIn
+                                routing="hash"
                                 forceRedirectUrl="/partner/dashboard"
                                 appearance={{
                                     elements: {
