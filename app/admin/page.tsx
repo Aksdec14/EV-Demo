@@ -10,7 +10,21 @@ interface FormState {
     [key: string]: string;
 }
 
-const SHEETS_CONFIG = {
+interface FieldConfig {
+    name: string;
+    label: string;
+    placeholder: string;
+    type: string;
+    options?: string[];
+}
+
+interface SheetConfig {
+    fields: FieldConfig[];
+    color: string;
+    icon: string;
+}
+
+const SHEETS_CONFIG: Record<Sheet, SheetConfig> = {
     Partners: {
         fields: [
             { name: "partner_id", label: "Partner ID", placeholder: "P003", type: "text" },
