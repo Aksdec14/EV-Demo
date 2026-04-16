@@ -9,13 +9,13 @@ const footerLinks = {
         { label: "Fleet Management", href: "#" },
         { label: "Renewable Energy", href: "#" },
         { label: "Quality Charge", href: "#" },
-        { label: "Installation", href: "#" },
+        { label: "Installation", href: "" },
     ],
     Company: [
-        { label: "About", href: "#" },
-        { label: "Careers", href: "#" },
-        { label: "Blog", href: "#" },
-        { label: "News", href: "#" },
+        { label: "About", href: "/about" },
+        { label: "Services", href: "/services" },
+        { label: "Contact", href: "/contact" },
+        { label: "Become a Partne", href: "partner/register" },
     ],
     Resources: [
         { label: "Documentation", href: "#" },
@@ -109,8 +109,8 @@ export default function Footer() {
                         <button
                             onClick={handleSubscribe}
                             className={`shrink-0 px-6 py-3 text-sm font-bold rounded-r-xl transition-all duration-200 ${subscribed
-                                    ? "bg-green-900 text-white"
-                                    : "bg-gray-900 hover:bg-gray-800 active:scale-95 text-white"
+                                ? "bg-green-900 text-white"
+                                : "bg-gray-900 hover:bg-gray-800 active:scale-95 text-white"
                                 }`}
                         >
                             {subscribed ? "✓ Done!" : "Subscribe →"}

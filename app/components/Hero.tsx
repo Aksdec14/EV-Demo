@@ -26,35 +26,50 @@ export default function Hero() {
 
                         {/* Top Label */}
                         <p className="text-green-400 text-xs sm:text-sm font-semibold uppercase tracking-widest mb-4">
-                            Convenient Solutions For Smart And Sustainable Electric Car Charging
+                            India's Smart EV Charging Network — Fast, Reliable & Accessible
                         </p>
 
                         {/* Main Heading */}
                         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-4">
-                            Smarter Chargers For Your Electric Vehicle{" "}
-                            <span className="text-green-400">BETTER</span>
+                            Charge Smarter. Drive{" "}
+                            <span className="text-green-400">Further.</span>
                         </h1>
 
-                        {/* Subtext */}
+                        {/* Subtext - real content */}
                         <p className="text-gray-400 text-sm sm:text-base leading-relaxed mb-8 max-w-xl">
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.
+                            With ultra-fast DC charging stations across the country, we power your electric vehicle in minutes — not hours. Reliable uptime, transparent pricing, and a growing network built for India's EV revolution.
                         </p>
 
                         {/* CTA Buttons */}
                         <div className="flex flex-wrap items-center gap-4">
                             <a
-                                href="#"
+                                href="/partner/register"
                                 className="px-6 py-3 bg-green-500 hover:bg-green-400 text-black font-semibold text-sm rounded-md transition-all duration-200 shadow-lg shadow-green-500/30 no-underline"
                             >
-                                GET STARTED
+                                BECOME A PARTNER
                             </a>
                             <a
-                                href="#"
+                                href="/contact"
                                 className="px-6 py-3 border border-white/30 hover:border-green-400 text-white hover:text-green-400 font-semibold text-sm rounded-md transition-all duration-200 backdrop-blur-sm no-underline"
                             >
                                 CONTACT US
                             </a>
                         </div>
+
+                        {/* Trust badges */}
+                        <div className="flex flex-wrap items-center gap-6 mt-10">
+                            {[
+                                { value: "500+", label: "Charging Stations" },
+                                { value: "50K+", label: "Happy EV Drivers" },
+                                { value: "99%", label: "Network Uptime" },
+                            ].map((badge) => (
+                                <div key={badge.label} className="flex items-center gap-2">
+                                    <p className="text-green-400 font-extrabold text-xl">{badge.value}</p>
+                                    <p className="text-gray-400 text-xs leading-tight">{badge.label}</p>
+                                </div>
+                            ))}
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -72,9 +87,9 @@ export default function Hero() {
                                 </svg>
                             </div>
                             <div>
-                                <h3 className="text-gray-900 font-bold text-base mb-1">Fast DC Charging</h3>
+                                <h3 className="text-gray-900 font-bold text-base mb-1">Ultra-Fast DC Charging</h3>
                                 <p className="text-gray-500 text-sm leading-relaxed">
-                                    Excepteur sint occaecat cupid atat non pro ident, decid cu non pro dent, aunt in culpa qui officia dese.
+                                    Our high-power DC fast chargers deliver up to 150 kW, getting your EV from low battery to 80% in under 30 minutes.
                                 </p>
                             </div>
                         </div>
@@ -83,13 +98,13 @@ export default function Hero() {
                         <div className="flex items-start gap-4 p-6 sm:p-8 hover:bg-green-50 transition-colors duration-200 group">
                             <div className="w-12 h-12 bg-green-100 group-hover:bg-green-500 rounded-xl flex items-center justify-center flex-shrink-0 transition-colors duration-200">
                                 <svg className="w-6 h-6 text-green-500 group-hover:text-white transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
                                 </svg>
                             </div>
                             <div>
-                                <h3 className="text-gray-900 font-bold text-base mb-1">Save More Energy</h3>
+                                <h3 className="text-gray-900 font-bold text-base mb-1">Wide Station Network</h3>
                                 <p className="text-gray-500 text-sm leading-relaxed">
-                                    Excepteur sint occaecat cupid atat non pro ident, decid cu non pro dent, aunt in culpa qui officia dese.
+                                    Find a charging point near you across metros, highways, malls, and residential areas — our network is growing every day.
                                 </p>
                             </div>
                         </div>
@@ -98,13 +113,13 @@ export default function Hero() {
                         <div className="flex items-start gap-4 p-6 sm:p-8 hover:bg-green-50 transition-colors duration-200 group">
                             <div className="w-12 h-12 bg-green-100 group-hover:bg-green-500 rounded-xl flex items-center justify-center flex-shrink-0 transition-colors duration-200">
                                 <svg className="w-6 h-6 text-green-500 group-hover:text-white transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
                             </div>
                             <div>
-                                <h3 className="text-gray-900 font-bold text-base mb-1">Fast DC Charging</h3>
+                                <h3 className="text-gray-900 font-bold text-base mb-1">Earn With Your Space</h3>
                                 <p className="text-gray-500 text-sm leading-relaxed">
-                                    Excepteur sint occaecat cupid atat non pro ident, decid cu non pro dent, aunt in culpa qui officia dese.
+                                    Host an EV charging station at your property and earn 60% of all revenue generated, plus a guaranteed monthly fixed income.
                                 </p>
                             </div>
                         </div>

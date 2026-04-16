@@ -4,27 +4,27 @@
 export function Services() {
     const services = [
         {
-            title: "Fast Charging",
-            desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
-            img: "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=400&q=80",
+            title: "DC Fast Charging",
+            desc: "Experience ultra-fast EV charging with our high-power DC chargers designed to minimize downtime and keep you moving efficiently.",
+            img: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=400&q=80",
             badge: "01",
         },
         {
-            title: "Fleet Management",
-            desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
-            img: "https://images.unsplash.com/photo-1647166545674-ce28ce93bdca?w=400&q=80",
+            title: "Fleet Charging Solutions",
+            desc: "Smart charging infrastructure for EV fleets with real-time monitoring, energy optimization, and seamless management tools.",
+            img: "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=400&q=80",
             badge: "02",
         },
         {
-            title: "Renewable Energy",
-            desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
-            img: "https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=400&q=80",
+            title: "Solar Integrated Charging",
+            desc: "Sustainable EV charging powered by renewable energy sources, reducing carbon footprint and energy costs.",
+            img: "https://images.unsplash.com/photo-1509395176047-4a66953fd231?w=400&q=80",
             badge: "03",
         },
         {
-            title: "Quality Charge",
-            desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
-            img: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
+            title: "Smart Charging Network",
+            desc: "Connected charging stations with mobile app integration, real-time availability, and secure payment systems.",
+            img: "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=400&q=80",
             badge: "04",
         },
     ];
@@ -89,13 +89,13 @@ export function Services() {
 // ─── MISSION SECTION ────────────────────────────────────────────────
 export function Mission() {
     const points = [
-        "Duis aute irure dolor in reprehenderit in voluptate.",
-        "Excepteur sint occaecat cupidatat non proident, sunt in culpa.",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Expand EV charging infrastructure across urban and highway networks.",
+        "Deliver fast, reliable, and smart charging experiences for every user.",
+        "Promote clean energy adoption and reduce carbon emissions.",
     ];
 
     const partners = [
-        "Our Partners", "ZAXNER", "DARKWOOD", "CLEARFIX", "DOMO"
+        "Our Network", "Charging Partners", "Fleet Operators", "Energy Providers", "Technology Integrations"
     ];
 
     return (
@@ -175,8 +175,8 @@ export function Mission() {
                             <span
                                 key={i}
                                 className={`text-sm font-bold tracking-widest uppercase transition-colors duration-200 cursor-pointer ${i === 0
-                                        ? "text-green-500"
-                                        : "text-gray-400 hover:text-gray-700"
+                                    ? "text-green-500"
+                                    : "text-gray-400 hover:text-gray-700"
                                     }`}
                             >
                                 {partner}

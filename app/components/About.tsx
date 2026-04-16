@@ -55,7 +55,7 @@ export default function About() {
                         {/* Main Image */}
                         <div className="relative rounded-2xl overflow-hidden shadow-xl">
                             <img
-                                src="https://images.unsplash.com/photo-1617788138017-80ad40651399?w=800&q=80"
+                                src="https://images.unsplash.com/photo-1616361715039-11dde2199a21?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                 alt="EV Charging Station"
                                 className="w-full h-80 sm:h-96 lg:h-[420px] object-cover object-center"
                             />
@@ -80,7 +80,7 @@ export default function About() {
 
                         {/* Section Label */}
                         <p className="text-green-500 text-xs font-bold uppercase tracking-widest mb-3">
-                            About EVdriveX
+                            About EV-VoltGO
                         </p>
 
                         {/* Heading */}
@@ -91,7 +91,10 @@ export default function About() {
 
                         {/* Description */}
                         <p className="text-gray-500 text-sm sm:text-base leading-relaxed mb-8">
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            EV-VoltGO is committed to transforming the future of transportation by building a smart and reliable electric vehicle charging ecosystem.
+                            We provide fast, accessible, and efficient EV charging solutions designed for modern drivers, businesses, and fleet operators.
+                            Our goal is to simplify the EV experience through innovative technology, widespread charging infrastructure, and seamless user integration.
+                            By promoting clean energy and sustainable mobility, EV-VoltGO is driving the shift toward a greener, smarter, and more connected world.
                         </p>
 
                         {/* Feature Grid */}

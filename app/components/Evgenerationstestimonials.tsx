@@ -12,7 +12,7 @@ export function EVGenerations() {
     return (
         <section className="bg-white/20 py-16 sm:py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
-                <div className="bg-gradient-to-br from-green-900 via-green-800 to-gray-900 rounded-3xl overflow-hidden p-8 sm:p-12">
+                <div className="bg-gradient-to-br from-green-900 to-green-800 rounded-3xl overflow-hidden p-8 sm:p-12">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 
                         {/* LEFT - Text + Image */}
@@ -41,7 +41,7 @@ export function EVGenerations() {
                             {/* Image */}
                             <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-black/40">
                                 <img
-                                    src="https://images.unsplash.com/photo-1621009897512-87e6b4f3dcb8?w=800&q=80"
+                                    src="https://images.unsplash.com/photo-1619913387719-a43ee8859d9c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGV2JTIwY2hhcmdpbmclMjBzdGF0aW9ufGVufDB8fDB8fHwy"
                                     alt="EV Charging Station"
                                     className="w-full h-56 sm:h-64 object-cover"
                                 />
@@ -56,7 +56,7 @@ export function EVGenerations() {
                             {/* Small green info card */}
                             <div className="absolute -bottom-4 right-0 sm:-right-4 bg-green-500 rounded-xl p-4 max-w-[180px] shadow-xl shadow-green-900/40">
                                 <p className="text-black text-xs font-semibold leading-relaxed">
-                                    Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit.
+                                    EV-VoltGO provides reliable, high-speed charging infrastructure designed to power the next generation of electric mobility.
                                 </p>
                                 <a href="#" className="text-black text-xs font-bold underline mt-2 block">
                                     Learn More
@@ -68,10 +68,11 @@ export function EVGenerations() {
                         <div className="pt-6 lg:pt-0">
                             {/* Description */}
                             <p className="text-green-100/70 text-sm leading-relaxed mb-4">
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                EV-VoltGO is building a next-generation EV charging ecosystem focused on speed, reliability, and accessibility.
+                                Our smart charging infrastructure ensures seamless energy delivery for urban drivers, highway travelers, and commercial fleets.
                             </p>
                             <p className="text-green-100/70 text-sm leading-relaxed mb-8">
-                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est measures.
+                                With advanced technology, real-time monitoring, and sustainable energy integration, we are enabling a cleaner and more efficient future for electric mobility.
                             </p>
 
                             {/* Progress Bars */}
