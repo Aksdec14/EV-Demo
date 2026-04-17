@@ -15,7 +15,7 @@ const footerLinks = {
         { label: "About", href: "/about" },
         { label: "Services", href: "/services" },
         { label: "Contact", href: "/contact" },
-        { label: "Become a Partne", href: "partner/register" },
+        { label: "Become a Partner", href: "partner/register" },
     ],
     Resources: [
         { label: "Documentation", href: "#" },
@@ -134,7 +134,7 @@ export default function Footer() {
                             </div>
                             <span className="text-2xl font-extrabold tracking-tight">
                                 <span className="text-gray-900">EV</span>
-                                <span className="text-green-500">driveX</span>
+                                <span className="text-green-500">VoltGO</span>
                             </span>
                         </Link>
 
@@ -146,7 +146,7 @@ export default function Footer() {
                         {/* Contact info */}
                         <div className="space-y-3 mb-8">
                             <a
-                                href="mailto:info@evdrivex.com"
+                                href="mailto:evvoltgo@gmail.com"
                                 className="flex items-center gap-3 text-sm text-gray-500 hover:text-green-600 transition-colors duration-200 group"
                             >
                                 <span className="w-8 h-8 rounded-lg bg-green-50 border border-green-100 group-hover:border-green-300 group-hover:bg-green-100 flex items-center justify-center transition-all duration-200 shrink-0">
@@ -154,7 +154,7 @@ export default function Footer() {
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                     </svg>
                                 </span>
-                                info@evdrivex.com
+                                evvoltgo@gmail.com
                             </a>
                             <a
                                 href="tel:+919876543210"
@@ -220,7 +220,7 @@ export default function Footer() {
                 <div className="max-w-screen-xl mx-auto px-6 sm:px-10 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
                     <p className="text-xs text-gray-400">
                         © {new Date().getFullYear()}{" "}
-                        <span className="text-gray-600 font-semibold">EVdriveX</span>. All rights reserved.
+                        <span className="text-gray-600 font-semibold">EV-VoltGO</span>. All rights reserved.
                     </p>
                     <div className="flex items-center gap-6">
                         {["Privacy Policy", "Terms of Service", "Cookie Policy"].map((item) => (

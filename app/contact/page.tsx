@@ -78,7 +78,7 @@ export default function ContactPage() {
                 method: "POST",
                 headers: { "Content-Type": "application/json", Accept: "application/json" },
                 body: JSON.stringify({
-                    access_key: "YOUR_WEB3FORMS_ACCESS_KEY", // 🔑 Replace with your key
+                    access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
                     name: formData.name,
                     email: formData.email,
                     phone: formData.phone,
@@ -228,11 +228,9 @@ export default function ContactPage() {
                                     </p>
                                 )}
                             </form>
-
                         </div>
                     </div>
                 </section>
-
 
                 {/* ── TAGLINE SECTION ─────────────────────────────────────── */}
                 <section className="py-16 px-6 text-center max-w-3xl mx-auto">
@@ -244,7 +242,6 @@ export default function ContactPage() {
                         <strong className="text-gray-900">Satisfy Their Needs.</strong>
                     </p>
                 </section>
-
 
                 {/* ── FEATURES GRID ───────────────────────────────────────── */}
                 <section className="pb-20 px-6 bg-gray-50">
@@ -260,7 +257,6 @@ export default function ContactPage() {
                         ))}
                     </div>
                 </section>
-
 
                 {/* ── FAQ SECTION ─────────────────────────────────────────── */}
                 <section className="py-20 px-6 bg-white text-center">

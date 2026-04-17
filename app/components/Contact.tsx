@@ -79,14 +79,31 @@ export default function ContactSection() {
         setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
     };
 
-    const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
+    const handleSubmit = async (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
-        console.log("Form submitted:", formData);
+        try {
+            const res = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
+                    ...formData,
+                }),
+            });
+            const data = await res.json();
+            if (data.success) {
+                alert("Message sent successfully!");
+                setFormData({ name: "", email: "", phone: "", service: "", message: "" });
+            } else {
+                alert("Something went wrong. Please try again.");
+            }
+        } catch {
+            alert("Network error. Please check your connection.");
+        }
     };
 
     return (
         <div className="min-h-screen bg-gray-100 font-sans">
-
 
             {/* ── Main Content ── */}
             <div className="max-w-6xl mx-auto px-6 py-14">
@@ -211,9 +228,9 @@ export default function ContactSection() {
                             <div className="px-8 pt-8 pb-6 border-b border-white/10">
                                 <h3 className="text-lg font-bold text-white mb-3">Address</h3>
                                 <p className="text-sm text-green-100 leading-relaxed">
-                                    4517 Washington Ave.
+                                    42, Nariman Point,
                                     <br />
-                                    Manchester, Kentucky 39495
+                                    Mumbai, Maharashtra 400021
                                 </p>
                             </div>
 
@@ -222,7 +239,7 @@ export default function ContactSection() {
                                 <h3 className="text-lg font-bold text-white mb-3">Contact</h3>
                                 <div className="space-y-1.5 text-sm text-green-100">
                                     <p>
-                                        <span className="text-white/60">Phone : </span>+0123-456-789
+                                        <span className="text-white/60">Phone : </span>+91 98765-43210
                                     </p>
                                     <p>
                                         <span className="text-white/60">Email : </span>
@@ -276,7 +293,7 @@ export default function ContactSection() {
                         title="Location Map"
                         className="w-full h-full"
                         loading="lazy"
-                        src="https://www.openstreetmap.org/export/embed.html?bbox=-84.5600%2C37.0700%2C-84.4400%2C37.1500&layer=mapnik&marker=37.1100%2C-84.5000"
+                        src="https://www.openstreetmap.org/export/embed.html?bbox=72.8100%2C18.9200%2C72.8500%2C18.9600&layer=mapnik&marker=18.9388%2C72.8354"
                         style={{ border: 0, filter: "grayscale(100%) contrast(1.05) brightness(1.05)" }}
                         allowFullScreen
                     />
